@@ -31,24 +31,21 @@ if(objectsKeysArray.length !== objectsKeysArray2.length) {
 
   return false;
 }
- for (const key of objectsKeysArray) {
+for (const key of objectsKeysArray) {
 
-   if(!objectsKeysArray2.includes(key)) {
+  if(!objectsKeysArray2.includes(key)) {
     return false;
-   }
-   let value1 = object1[key]
-   let value2 = object2[key]
-   if(Array.isArray(value1) && Array.isArray(value2)){
-     if(!eqArrays(value1,value2)){
-       return false;
-     }
-   } else if(value1 !== value2 ){
-       return false;
-     }
-     
-   
-   //console.log(objectsKeysArray, object1[key],key)
-
+  }
+  let value1 = object1[key]
+  let value2 = object2[key]
+  if(Array.isArray(value1) && Array.isArray(value2)){
+    if(!eqArrays(value1,value2)){
+    return false;
+    }
+  } else if(value1 !== value2 ){
+        return false;
+    }
+  
   }
   return true;
 
