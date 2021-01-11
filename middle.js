@@ -1,27 +1,7 @@
-const assertArraysEqual = function(actual,expected) {
-  if(actual.length !== expected.length){
-    return false;
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      console.log(`Assertion failed  ${actual} !== ${expected}`);
-    }
-  }
-  console.log(`Assertion passed : ${actual} === ${expected}`);
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
-const eqArrays = function(actual,expected) {
-  if(actual.length !== expected.length){
-    return false;
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-      
-    }
-  }
-   return true;
-};
+
+const eqArrays = require('./eqArrays')
 
 // if array lenght is one or  two  return empty array
 // if length is odd return middle element
@@ -38,19 +18,6 @@ const eqArrays = function(actual,expected) {
       element.push(array.length/2);
       element.push((array.length/2) + 1)
   }
-
-
-  /*
-  for (let i = 0; i < array.length; i++) {
-    if(array.length % === 0) {
-
-    }
-  if(array[i]!==array[0] && array[i]!== array[array.length-1]){
-    element.push(array[i]);
-  
-  
-  }*/
-
   
   return element;
   }
@@ -58,3 +25,4 @@ const eqArrays = function(actual,expected) {
 console.log(middle([1, 2, 3, 4, 5, 6]))
 
 
+module.exports = middle;
