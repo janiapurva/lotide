@@ -21,8 +21,7 @@ const eqArrays = require('./eqArrays')
   
   return element;
   }
-  console.log(middle([1, 2, 3, 4]))
-console.log(middle([1, 2, 3, 4, 5, 6]))
+  
 
 
 module.exports = middle;
