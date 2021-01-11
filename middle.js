@@ -1,7 +1,3 @@
-const assertArraysEqual = require("./assertArraysEqual");
-
-
-const eqArrays = require('./eqArrays')
 
 // if array lenght is one or  two  return empty array
 // if length is odd return middle element

@@ -8,6 +8,6 @@ const assertEqual = function(actual,expected) {
   }
    
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
+
 
 module.exports = assertEqual;
