@@ -1,5 +1,5 @@
 const assertArraysEqual = function(actual,expected) {
-  if(actual.length !== expected.length){
+  if (actual.length !== expected.length) {
     return false;
   }
   for (let i = 0; i < actual.length; i++) {
@@ -13,7 +13,7 @@ const assertArraysEqual = function(actual,expected) {
 
 
 const eqArrays = function(actual,expected) {
-  if(actual.length !== expected.length){
+  if (actual.length !== expected.length) {
     return false;
   }
   for (let i = 0; i < actual.length; i++) {
@@ -22,7 +22,7 @@ const eqArrays = function(actual,expected) {
       
     }
   }
-   return true;
+  return true;
 };
 
 
@@ -38,13 +38,13 @@ const eqArrays = function(actual,expected) {
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
-    if(sentence[i]=== " "){
+    if (sentence[i] === " ") {
       continue;
     }
-    if(results[sentence[i]]){
-      results[sentence[i]].push(i) 
+    if (results[sentence[i]]) {
+      results[sentence[i]].push(i);
     } else {
-      results[sentence[i]] = [i]
+      results[sentence[i]] = [i];
 
     }
 
@@ -53,4 +53,4 @@ const letterPositions = function(sentence) {
   // logic to update results here
   return results;
 };
-console.log(letterPositions("lighhouse in the house"))
+console.log(letterPositions("lighhouse in the house"));

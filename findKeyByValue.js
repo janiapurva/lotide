@@ -8,16 +8,16 @@ const assertEqual = function(actual,expected) {
    
 };
 
-function findKeyByValue(list,value){
-  for(let elemenent in list){
+const findKeyByValue = function(list,value) {
+  for (let elemenent in list) {
 
-  if(list[elemenent] === value){
-    return elemenent
+    if (list[elemenent] === value) {
+      return elemenent;
+    }
   }
-  }
- return undefined;
-}
-const bestTVShowsByGenre = { 
+  return undefined;
+};
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"

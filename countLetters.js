@@ -9,20 +9,20 @@ const assertEqual = function(actual,expected) {
 };
 
 
-function countLetters (string) {
+const countLetters = function(string) {
   let final = {};
   for (const letter of string) {
-    if(letter === " "){
+    if (letter === " ") {
       continue;
     }
-    if(final[letter]) {
+    if (final[letter]) {
       final[letter] += 1;
-    }else  {
+    } else  {
       final[letter] = 1;
     }
     
   }
   return final;
-}
+};
 
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));

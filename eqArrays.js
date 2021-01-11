@@ -1,7 +1,6 @@
-const assertEqual = require('./assertEqual');
 
 const eqArrays = function(actual,expected) {
-  if(actual.length !== expected.length){
+  if (actual.length !== expected.length) {
     return false;
   }
   for (let i = 0; i < actual.length; i++) {
@@ -10,7 +9,7 @@ const eqArrays = function(actual,expected) {
       
     }
   }
-   return true;
+  return true;
 };
 
 
