@@ -4,10 +4,10 @@ const assertEqual = require('../assertEqual');
 
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length,2);
-assertEqual(result[0], "Lighthouse"); "Lighthouse";
-assertEqual(result[1], "Labs");
+// assertEqual(result.length,2);
+// assertEqual(result[0], "Lighthouse"); "Lighthouse";
+// assertEqual(result[1], "Labs");
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
-assertEqual(words.length, 3);
+// assertEqual(words.length, 3);
